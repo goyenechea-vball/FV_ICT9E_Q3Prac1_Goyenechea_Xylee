@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3Practice1</title>
+	<style>
+		#quotetext{
+			position: absolute;
+			top: 44%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: monospace;
+		}
+		.img{
+			height: 50px;
+			width: 50px;
+		}
+		h1{
+			text-align: center;
+			color: #e79fed;
+		}
+	</style>
+</head>
+<body>
+	<h1>Quote of the Day</h1>
+	<br>
+	<div class="container.fluid" id="main">
+		<div class="row">
+			<center>
+				<div class="col-md-4" id="div2">
+					<img id="box" src="https://img.freepik.com/free-vector/pastel-bohemian-feather-border-vector_53876-166081.jpg">
+					<div id="quotetext" class="col-md-3">
+						<p id="quote1"></p>
+						<p id="owner"></p>	
+					</div>	
+				</div>
+			</center>
+		</div>
+
+	<!--
+		<p id="sample">text</p>
+	-->
+
+
+	<script>
+		//place your quote here
+		let quote1 = "If it doesn't challenge you, it won't change you.";
+		let name = "-Fred DeVito";
+
+		document.getElementById("quote1").innerHTML = quote1 + "<br>";
+		document.getElementById("owner").innerHTML = name
+
+
+		/*
+		let goal1, goal2, goal3;
+		goal1 = "Get more sleep"; //not sleeping past 10:45pm
+		goal2 = "Start doing homework once given"; //not the day before
+		goal3 = "Finally do the core workout to get flat stomach"; //everday
+
+
+		document.getElementById("sample").innerHTML = goal1;
+		document.write("<h2 style='color: blue;''>" + goal2 + "</h2>");
+		window.alert(goal3);
+
+
+	
+		let a,b; //declare variables
+		a = 5;  //assign a value
+		b = 4; //assign a value
+
+		//document.getElementById("sample").innerHTML = a + b;
+		//document.write(a*b);
+		window.alert(a/b);
+		*/
+
+	</script>
+
+</body>
+</html>
